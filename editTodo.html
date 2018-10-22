@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Todo</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link href="fonts/icon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    
+input[type=text],input[type=date]{
+    color:white !important;
+}
+  </style>
+</head>
+
+<body id="newTodoB" onload="update()">
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="images/bg7.jpeg">
+                </div>
+                <a href="#user"><img class="circle" src="images/PROFILE.PNG"></a>
+                <a href="#name"><span class="white-text name" id="nameOutput">Guest</span></a>
+                <a href="#email"><span class="white-text email" id="emailOutput">talhanoman61@gmail.com</span></a>
+            </div>
+        </li>
+        <li id="navstyle"><a href="allTodos.html"><i class="material-icons">content_paste</i>All Todos</a></li>
+        <li>
+            <div class="section"></div>
+        </li>
+        <li id="navTodo"><a href="newTodo.html"><i class="material-icons">control_point</i>Create Todo</a></li>
+        <li>
+            <div class="section"></div>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <div class="section"></div>
+        </li>
+
+    </ul>
+
+
+    <a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a>
+
+    <div class="marg">
+        <div id="TodoContent1">
+            <h2 class="white-text center-align">Add New Todo</h2>
+            <div class="divider"></div>
+            <div class="section"></div>
+            <div class="container">
+                <div id="results">
+                    <form action="allTodos.html" onsubmit="return updatee()">
+                        <div class="input-field col s6">
+                            <input id="title" type="text" class="validate white-text">
+                            <label class="active" for="title">Title</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="content" type="text" class="validate white-text">
+                            <label class="active" for="content">Content</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="date" type="date" class="validate white-text">
+                            <label class="active" for="date">Date</label>
+                        </div>
+
+                        <div style="margin:0 auto;width: 40%;">
+                            <button class="btn waves-effect waves-light" type="submit" >
+                                <i class="material-icons left">edit</i>
+                                Change Todo
+                              </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/edit.js"></script>
+</body>
+
+</html>

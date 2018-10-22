@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todo Application</title>
+  <link rel="stylesheet" href="css/materialize.css">
+  <link href="fonts/icon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="bodybackground">
+  <!-- <nav class="blue"></nav> -->
+
+  <div class="container">
+    <div class="row">
+      <h1 class="center-align font1 white-text">Sign In</h1>
+    </div>
+    <div class="divider "></div>
+    <div class="section"></div>
+
+
+    <form action="allTodos.html" method="post" onsubmit="return submitForm();">
+
+      <label for="name" class="white-text"> Name</label>
+      <input id="name" type="text" class="validate white">
+
+      <label for="email" class="white-text"> Email</label>
+      <input id="email" type="email" class="validate white">
+      <label for="pass" class="white-text"> Password</label>
+      <input type="password" name="" id="pass" class="white">
+      <div class="section"></div>
+      <input type="submit" value="Sign In" class="waves-effect waves-light btn blue white-text" id="signIn">
+    </form>
+  </div>
+
+  <script src="js/materialize.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

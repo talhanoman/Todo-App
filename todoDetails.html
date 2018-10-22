@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Todo</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link href="fonts/icon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    
+input[type=text],input[type=date]{
+    color:white !important;
+}
+  </style>
+</head>
+
+<body id="newTodoB" onload="taskDetails()">
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="images/bg7.jpeg">
+                </div>
+                <a href="#user"><img class="circle" src="images/PROFILE.PNG"></a>
+                <a href="#name"><span class="white-text name" id="nameOutput">Guest</span></a>
+                <a href="#email"><span class="white-text email" id="emailOutput">talhanoman61@gmail.com</span></a>
+            </div>
+        </li>
+        <li id="navstyle"><a href="allTodos.html"><i class="material-icons">content_paste</i>All Todos</a></li>
+        <li>
+            <div class="section"></div>
+        </li>
+        <li id="navTodo"><a href="newTodo.html"><i class="material-icons">control_point</i>Create Todo</a></li>
+        <li>
+            <div class="section"></div>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <div class="section"></div>
+        </li>
+
+    </ul>
+
+
+    <a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a>
+
+    <div class="marg">
+        <div id="TodoContent1">
+            <h2 class="white-text center-align">Add New Todo</h2>
+            <div class="divider"></div>
+            <div class="section"></div>
+            <div class="section"></div>
+            <div class="section"></div>
+            <div class="section"></div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col s4 m5 l5"></div>
+                <div id="results" class="col s7 m5 l5">
+                        <p><b>Title:</b> &nbsp; <i id="title"></i> </p>
+                        <p><b>Content:</b> &nbsp; <i id="content"></i></p>
+                        <p><b>Date:</b> &nbsp; <i id="date"></i></p>
+                        <button class="btn waves-effect waves-light blue" id="done" >
+                                <i class="material-icons left">done</i>
+                                Task Done
+                              </button>
+        
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/details.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>All Todos</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link href="fonts/icon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="allTodos">
+    <!-- <nav class="blue darken-3"></nav> -->
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="images/bg7.jpeg">
+                </div>
+                <a href="#user"><img class="circle" src="images/PROFILE.PNG"></a>
+                <a href="#name"><span class="white-text name" id="nameOutput">Guest</span></a>
+                <a href="#email"><span class="white-text email" id="emailOutput">talhanoman61@gmail.com</span></a>
+            </div>
+        </li>
+        <li id="navstyle"><a href="allTodos.html"><i class="material-icons">content_paste</i>All Todos</a></li>
+        <li>
+            <div class="section"></div>
+        </li>
+        <li><a href="newTodo.html"><i class="material-icons">control_point</i>Create Todo</a></li>
+        <li>
+            <div class="section"></div>
+        </li>
+        <li><a href="#!"><i class="material-icons">done</i>Complete Todo</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <div class="section"></div>
+        </li>
+
+    </ul>
+
+
+    <a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a>
+    <!-- Div for setting 300px margin left of the container -->
+    <div class="marg">
+
+        <h3 class="center-align font1 white-text"><i class="medium material-icons" style="vertical-align: middle;">content_paste</i>
+            All Todos</h3>
+
+        <div class="divider"></div>
+        <!-- <h2 class="marg">Date Today</h2> -->
+        <div class="section"></div>
+        <div id="dandt">
+            <div class="section"></div>
+            <!-- Div for displaying date through javascript -->
+        </div>
+
+        <div id="todos">
+            <ul class="collapsible popout" id="lists"></ul>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/materialize.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/DoneTasks.js"></script>
+
+
+</body>
+
+</html>
